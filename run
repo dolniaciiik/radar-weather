@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "RADAR WEATHER IMAGE"
+echo "///-------------///"
+python3 radar.py
+echo "FOR CLEANUP, PRESS C"
+echo "PRESS E FOR EXIT"
+read q
+if [ $q == "c" ]; then
+	rm data0.png
+	rm data1.png
+fi
+if [ $q == "e" ];then
+	continue
+fi
+cd ~
